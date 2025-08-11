@@ -1,18 +1,40 @@
-# Ignore node_modules in both frontend and backend
-brainly-main-fe/node_modules/
-Brainly/node_modules/
-
-# Ignore environment files
-brainly-main-fe/src/config
-Brainly/src/config/
-
-
-# Optional: ignore build artifacts
-brainly-main-fe/dist/
-brainly-main-fe/build/
-Brainly/dist/
-Brainly/build/
-
+# === GENERAL IGNORE RULES ===
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Env files (NEVER commit secrets)
+.env
+.env.*
+
+# === NODE.JS / BACKEND ===
+node_modules/
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# === FRONTEND / VITE ===
+# Build output
+brainly-main-fe/dist/
+# Cache
+.vite/
+
+# === OPTIONAL: Local runtime state
+*.local
+*.swp
+*.tmp
+
+# === OPTIONAL: Testing
+coverage/
