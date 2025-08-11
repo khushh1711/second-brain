@@ -1,0 +1,18 @@
+# Ignore node_modules in both frontend and backend
+brainly-main-fe/node_modules/
+Brainly/node_modules/
+
+# Ignore environment files
+brainly-main-fe/src/config
+Brainly/src/config/
+
+
+# Optional: ignore build artifacts
+brainly-main-fe/dist/
+brainly-main-fe/build/
+Brainly/dist/
+Brainly/build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
